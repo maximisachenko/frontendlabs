@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="windows-1251">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Data Input Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>User Data Input Form</h1>
+    <form id="userForm">
+        <label for="fullName">Full Name:</label>
+        <input type="text" id="fullName" required>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" required>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" required>
+
+        <label for="birthPlace">Place of Birth:</label>
+        <input type="text" id="birthPlace" required>
+
+        <label for="hobbies">Hobbies:</label>
+        <textarea id="hobbies" rows="4"></textarea>
+
+        <button type="submit">Submit</button>
+        <button type="button" onclick="clearCookies()">Clear</button>
+    </form>
+
+    <div id="output"></div>
+
+    <script src="main.js"></script>
+
+</body>
+</html>

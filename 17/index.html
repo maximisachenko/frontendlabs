@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Events</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Interactive Events</h1>
+        <h1>Maxim Isachenko</h1>
+
+        <h2>Mouse Event</h2>
+        <div id="mouse-event" class="event-box">Click on me!</div>
+
+        <h2>Keyboard Event</h2>
+        <input type="text" id="keyboard-input" placeholder="Type something...">
+        <p id="keyboard-output"></p>
+
+        <h2>Drag & Drop Event</h2>
+        <div class="event-box drag-area">
+            <div id="drag-source" class="draggable" draggable="true">Drag me</div>
+            <div id="drop-target" class="dropzone">Drop here</div>
+        </div>
+
+        <h2>Pointer Event</h2>
+        <div id="pointer-event" class="event-box">Move your pointer here!</div>
+
+        <h2>Scroll Event</h2>
+        <div class="event-box">
+            <div id="scroll-event" class="scroll-box">
+                <div class="scroll-content">
+                    <p>Scroll down to trigger the event!</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse at erat turpis. Nulla facilisi. Donec ac facilisis mi.</p>
+                    <p>Mauris auctor lorem in velit tristique, a fermentum velit convallis. Aenean at magna ac felis venenatis tristique a a magna.</p>
+                </div>
+            </div>
+        </div>
+
+        <h2>Touch Event</h2>
+        <div id="touch-event" class="event-box">Touch me!</div>
+
+        <h2>Timer Event</h2>
+        <button id="start-timer">Start Timer</button>
+        <button id="stop-timer">Stop Timer</button>
+        <button id="speed-up">Speed Up Timer</button>
+        <button id="slow-down">Slow Down Timer</button>
+        <p>Time remaining: <span id="timer-output">10</span> seconds</p>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

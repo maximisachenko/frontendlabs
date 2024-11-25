@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="windows-1251">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Form with Validation and Regular Expressions</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h2>User Form</h2>
+    <form id="userForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required minlength="2" maxlength="50">
+
+        <label for="age">Age:</label>
+        <input type="text" id="age" name="age" placeholder="Enter your age" required pattern="\d+" title="Age must be a number">
+
+        <label for="gender">Gender:</label>
+        <input type="radio" id="male" name="gender" value="Male" checked> Male
+        <input type="radio" id="female" name="gender" value="Female"> Female
+
+        <label for="interests">Interests:</label>
+        <input type="checkbox" id="sport" name="interest" value="Sport"> Sport
+        <input type="checkbox" id="music" name="interest" value="Music"> Music
+        <input type="checkbox" id="reading" name="interest" value="Reading"> Reading
+
+        <label for="country">Country:</label>
+        <select id="country" name="country" required>
+            <option value="">Select a country</option>
+            <option value="Russia">Russia</option>
+            <option value="USA">USA</option>
+            <option value="Germany">Germany</option>
+        </select>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <!-- Block for result output -->
+    <div id="result"></div>
+
+    <!-- Block for regex testing -->
+    <h3>Regex Testing</h3>
+    <input type="text" id="inputText" placeholder="Enter text to test">
+    <button id="checkButton">Check</button>
+
+    <div id="regexResult"></div>
+
+    <script src="main.js"></script>
+
+</body>
+</html>
